@@ -1,12 +1,14 @@
 # Análise Exploratória e Preparação de Dados para Modelos de Aprendizado de Máquina
 
 **Aluno:** Halyson Santos  
-**Matrícula:** 20220062812
+**Matrícula:** 20220062812  
 **Disciplina:** DCT1401 - Inteligência Artificial  
 **Período:** 2026.2  
 **Professor:** Thommas K. S. Flores  
 **Instituição:** Universidade Federal do Rio Grande do Norte - UFRN  
-**Departamento:** Departamento de Computação e Tecnologia (DCT)
+**Departamento:** Departamento de Computação e Tecnologia (DCT)  
+**Repositório:** [https://github.com/HalysonSA/heart-disease-risk](https://github.com/HalysonSA/heart-disease-risk)  
+**Dataset:** [Heart Disease Risk 2026 - Kaggle](https://www.kaggle.com/datasets/uditjain13/heart-disease-risk-2026)
 
 ---
 
@@ -14,7 +16,7 @@
 
 Este repositório contém a análise exploratória e o pré-processamento de dados para a atividade prática avaliativa da disciplina **DCT1401 - Inteligência Artificial**, realizada no período 2026.2.
 
-O projeto utiliza um dataset de **risco de doenças cardíacas** contendo informações clínicas e de estilo de vida de aproximadamente 1.100 pacientes. O objetivo principal é preparar esses dados para construção de dois modelos de aprendizado de máquina com paradigmas diferentes:
+O projeto utiliza um dataset de **risco de doenças cardíacas** contendo informações clínicas e de estilo de vida de 9.000 pacientes. O objetivo principal é preparar esses dados para construção de dois modelos de aprendizado de máquina com paradigmas diferentes:
 
 1. **Modelo de Regressão**: Prever `max_heart_rate_achieved` (Frequência Cardíaca Máxima Alcançada)
 2. **Modelo de Classificação**: Prever `has_heart_disease` (Presença de Doença Cardíaca: Sim/Não)
@@ -222,9 +224,9 @@ Isto abrirá uma janela no seu navegador padrão mostrando os arquivos do projet
 
 **Distribuição das Classes:**
 
-- Sem doença (0): ~52% dos pacientes
-- Com doença (1): ~48% dos pacientes
-- Balanceamento: 92% (muito bom para classificação)
+- Sem doença (0): ~69.7% dos pacientes (6.273)
+- Com doença (1): ~30.3% dos pacientes (2.727)
+- Balanceamento: 43.5% (aceitável para classificação)
 
 **Top Features Discriminativas:**
 
