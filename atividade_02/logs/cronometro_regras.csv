@@ -1,0 +1,7 @@
+problema,sessao,data,hora_inicio,hora_fim,duracao_min,n_regras_criadas,interrupcoes,observacoes
+classificacao,1,2026-10-25,23:55:39,23:55:57,0.30,5,0,"Regras geradas por IA; validação"
+classificacao,2,2026-10-25,23:56:03,23:56:09,0.10,5,0,"Regras geradas por IA; inserção + validação"
+classificacao,3,2026-10-25,23:56:14,23:56:21,0.12,4,0,"Regras geradas por IA; inserção + validação"
+regressao,1,2026-10-25,23:56:24,23:56:36,0.20,1,0,"Regras geradas por IA; inserção + validação"
+regressao,2,2026-10-25,23:56:40,23:56:48,0.13,4,0,"Regras geradas por IA; inserção + validação"
+regressao,3,2026-10-25,23:56:53,23:57:00,0.12,4,0,"Regras geradas por IA; inserção + validação"

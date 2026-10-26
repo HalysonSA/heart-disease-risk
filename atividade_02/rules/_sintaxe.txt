@@ -1,0 +1,29 @@
+# ============================================================================
+# SINTAXE DA BASE DE CONHECIMENTO (lida por src/expert_system.py)
+# ============================================================================
+# Uma regra por linha:
+#   ID | TIPO | SE <condição> E <condição> ... ENTAO <fato> = <valor>
+#   ID | TIPO | SE <condição> OU <condição> ... ENTAO <fato> += <valor>
+#   PADRAO <fato> = <valor>          (valor usado se nenhuma regra concluir o fato)
+#
+# TIPO  : relacao | recomendacao | diretriz | estrategia | heuristica
+# Cond. : <coluna ou fato> <op> <valor>   op = ==  !=  >  >=  <  <=
+# Não misture E e OU na mesma regra (o parser recusa).
+# "="  atribui; "+=" acumula a partir do valor atual / do PADRAO / de 0
+#       (útil para pontuação de risco ou ajustes em bpm sobre a média).
+# O valor pode ser constante ou expressão com fatos: ENTAO fc = 208 - 0.7 * age
+# A ordem no arquivo é a prioridade; cada regra dispara no máx. 1 vez por paciente.
+# Regras podem criar fatos intermediários usados por outras (encadeamento):
+#   R01 | relacao    | SE exercise_induced_angina == 1 E st_depression >= 2 ENTAO isquemia = sim
+#   R02 | heuristica | SE isquemia == sim ENTAO has_heart_disease = 1
+#
+# Colunas disponíveis (já com _ no lugar de espaço/hífen):
+#   age sex resting_bp_systolic resting_bp_diastolic cholesterol_total hdl ldl
+#   triglycerides fasting_blood_sugar hba1c bmi resting_heart_rate
+#   max_heart_rate_achieved (só na classificação) exercise_induced_angina st_depression
+#   family_history alcohol_units_per_week exercise_minutes_per_week sleep_hours
+#   stress_score wearable_owner daily_steps diet_quality_score
+#   has_heart_disease (só na regressão) chest_pain_Asymptomatic
+#   chest_pain_Atypical_Angina chest_pain_Non_Anginal_Pain chest_pain_Typical_Angina
+#   smoker_Current smoker_Former smoker_Never
+# ============================================================================

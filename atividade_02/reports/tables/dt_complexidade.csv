@@ -1,0 +1,5 @@
+problema,arvore,metrica,treino,n_arvores,profundidade,n_nos,n_folhas
+classificacao,ajustada,F1,0.8241939279830548,1,13,347,174
+classificacao,sem_restricao,F1,1.0,1,20,1273,637
+regressao,ajustada,RMSE,11.822364396066655,1,5,59,30
+regressao,sem_restricao,RMSE,0.0,1,33,12577,6289

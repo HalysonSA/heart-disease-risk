@@ -1,0 +1,46 @@
+|--- age <= 55.50
+|   |--- has_heart_disease <= 0.50
+|   |   |--- age <= 41.50
+|   |   |   |--- age <= 30.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- age >  30.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- age >  41.50
+|   |   |   |--- age <= 47.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- age >  47.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |--- has_heart_disease >  0.50
+|   |   |--- age <= 47.50
+|   |   |   |--- age <= 36.50
+|   |   |   |   |--- value: [175.28]
+|   |   |   |--- age >  36.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- age >  47.50
+|   |   |   |--- diet_quality_score <= 63.05
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- diet_quality_score >  63.05
+|   |   |   |   |--- truncated branch of depth 2
+|--- age >  55.50
+|   |--- has_heart_disease <= 0.50
+|   |   |--- age <= 69.50
+|   |   |   |--- age <= 61.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- age >  61.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- age >  69.50
+|   |   |   |--- age <= 78.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- age >  78.50
+|   |   |   |   |--- value: [142.23]
+|   |--- has_heart_disease >  0.50
+|   |   |--- age <= 63.50
+|   |   |   |--- exercise_minutes_per_week <= 146.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- exercise_minutes_per_week >  146.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |--- age >  63.50
+|   |   |   |--- age <= 75.50
+|   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- age >  75.50
+|   |   |   |   |--- truncated branch of depth 2

@@ -1,0 +1,9 @@
+,valor
+Sistema operacional,Windows 10 (10.0.19045)
+Processador,"AMD Ryzen 5 5600X 6-Core (12 threads, 3.7 GHz, TDP 65 W)"
+Núcleos físicos / lógicos,6 / 12
+Memória RAM (GB),15.9
+Python,3.13.3
+scikit-learn,1.7.2
+pandas,3.0.5
+numpy,2.5.3

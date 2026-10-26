@@ -1,0 +1,10 @@
+id,tipo,regra
+R01,relacao,SE age > 0 ENTAO max_heart_rate_achieved = 208 - 0.7 * age
+R02,relacao,SE has_heart_disease == 1 ENTAO max_heart_rate_achieved += -15
+R03,relacao,SE exercise_induced_angina == 1 ENTAO max_heart_rate_achieved += -5
+R04,recomendacao,SE exercise_minutes_per_week >= 190 ENTAO max_heart_rate_achieved += 5
+R05,recomendacao,SE exercise_minutes_per_week <= 85 ENTAO max_heart_rate_achieved += -5
+R06,heuristica,SE age <= 40 ENTAO max_heart_rate_achieved += 8
+R07,heuristica,SE age >= 41 E age <= 50 ENTAO max_heart_rate_achieved += 4
+R08,heuristica,SE age >= 61 E age <= 70 ENTAO max_heart_rate_achieved += -6
+R09,heuristica,SE age >= 71 ENTAO max_heart_rate_achieved += -10

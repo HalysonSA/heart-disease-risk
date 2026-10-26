@@ -1,0 +1,4 @@
+n_amostras,classe,regra
+1103,0,SE max_heart_rate_achieved > 183.50 E alcohol_units_per_week > 0.35 E exercise_induced_angina <= 0.50 E st_depression <= 1.75 E resting_bp_systolic <= 147.50 ENTÃO P(doença) = 0.00
+178,1,SE exercise_induced_angina > 0.50 E cholesterol_total > 188.50 E max_heart_rate_achieved <= 147.50 E hdl <= 58.50 E cholesterol_total <= 226.50 ENTÃO P(doença) = 1.00
+94,1,SE exercise_induced_angina > 0.50 E st_depression > 0.45 E max_heart_rate_achieved <= 137.50 E hdl <= 58.50 E cholesterol_total <= 188.50 ENTÃO P(doença) = 1.00

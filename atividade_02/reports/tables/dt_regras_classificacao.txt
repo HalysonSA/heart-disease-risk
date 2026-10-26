@@ -1,0 +1,46 @@
+|--- max_heart_rate_achieved <= 157.50
+|   |--- exercise_induced_angina <= 0.50
+|   |   |--- max_heart_rate_achieved <= 140.50
+|   |   |   |--- st_depression <= 1.85
+|   |   |   |   |--- truncated branch of depth 7
+|   |   |   |--- st_depression >  1.85
+|   |   |   |   |--- truncated branch of depth 3
+|   |   |--- max_heart_rate_achieved >  140.50
+|   |   |   |--- st_depression <= 1.15
+|   |   |   |   |--- truncated branch of depth 9
+|   |   |   |--- st_depression >  1.15
+|   |   |   |   |--- truncated branch of depth 6
+|   |--- exercise_induced_angina >  0.50
+|   |   |--- max_heart_rate_achieved <= 147.50
+|   |   |   |--- hdl <= 58.50
+|   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- hdl >  58.50
+|   |   |   |   |--- truncated branch of depth 5
+|   |   |--- max_heart_rate_achieved >  147.50
+|   |   |   |--- age <= 71.50
+|   |   |   |   |--- truncated branch of depth 7
+|   |   |   |--- age >  71.50
+|   |   |   |   |--- class: 0
+|--- max_heart_rate_achieved >  157.50
+|   |--- exercise_induced_angina <= 0.50
+|   |   |--- max_heart_rate_achieved <= 175.50
+|   |   |   |--- st_depression <= 1.75
+|   |   |   |   |--- truncated branch of depth 10
+|   |   |   |--- st_depression >  1.75
+|   |   |   |   |--- truncated branch of depth 6
+|   |   |--- max_heart_rate_achieved >  175.50
+|   |   |   |--- st_depression <= 1.75
+|   |   |   |   |--- truncated branch of depth 8
+|   |   |   |--- st_depression >  1.75
+|   |   |   |   |--- truncated branch of depth 5
+|   |--- exercise_induced_angina >  0.50
+|   |   |--- max_heart_rate_achieved <= 176.50
+|   |   |   |--- st_depression <= 1.35
+|   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- st_depression >  1.35
+|   |   |   |   |--- truncated branch of depth 4
+|   |   |--- max_heart_rate_achieved >  176.50
+|   |   |   |--- st_depression <= 0.75
+|   |   |   |   |--- truncated branch of depth 4
+|   |   |   |--- st_depression >  0.75
+|   |   |   |   |--- truncated branch of depth 4

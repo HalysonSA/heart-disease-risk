@@ -1,0 +1,4 @@
+n_amostras,classe,regra
+766,,SE age > 47.50 E exercise_minutes_per_week > 128.50 E age <= 55.50 E has_heart_disease <= 0.50 ENTÃO 174.6 bpm
+751,,SE age > 55.50 E exercise_minutes_per_week > 68.50 E has_heart_disease <= 0.50 E age <= 61.50 ENTÃO 166.8 bpm
+657,,SE age > 41.50 E exercise_minutes_per_week > 89.50 E age <= 47.50 E has_heart_disease <= 0.50 ENTÃO 181.6 bpm

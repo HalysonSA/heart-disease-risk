@@ -1,0 +1,27 @@
+# Base de regras SE-ENTÃO — REGRESSÃO (max_heart_rate_achieved, em bpm)
+# Sintaxe completa em rules/_sintaxe.txt. Elaborada só com o conjunto de TREINO.
+#
+# A R01 calcula a FC máxima pela fórmula de Tanaka (2001); as demais somam ou subtraem
+# ajustes em bpm a partir dela. Valores entre parênteses = FC máxima média no treino.
+
+# Padrão = média do alvo no treino (164,9 bpm), usado se nenhuma regra disparar.
+PADRAO max_heart_rate_achieved = 164.9
+
+# --- Sessão 1: fórmula da idade ---
+# a idade é a variável mais forte: FC máx cai de 186 bpm (<= 43 anos) para 142 bpm (> 65 anos)
+R01 | relacao      | SE age > 0 ENTAO max_heart_rate_achieved = 208 - 0.7 * age
+
+# --- Sessão 2: doença e condicionamento ---
+# com doença (146) x sem (173); angina no esforço (155) x sem (168);
+# exercício >= 190 min/semana (173) x <= 85 min (156)
+R02 | relacao      | SE has_heart_disease == 1 ENTAO max_heart_rate_achieved += -15
+R03 | relacao      | SE exercise_induced_angina == 1 ENTAO max_heart_rate_achieved += -5
+R04 | recomendacao | SE exercise_minutes_per_week >= 190 ENTAO max_heart_rate_achieved += 5
+R05 | recomendacao | SE exercise_minutes_per_week <= 85 ENTAO max_heart_rate_achieved += -5
+
+# --- Sessão 3: correção da fórmula por faixa de idade ---
+# os resíduos de Tanaka no treino são positivos nos jovens e negativos nos idosos
+R06 | heuristica   | SE age <= 40 ENTAO max_heart_rate_achieved += 8
+R07 | heuristica   | SE age >= 41 E age <= 50 ENTAO max_heart_rate_achieved += 4
+R08 | heuristica   | SE age >= 61 E age <= 70 ENTAO max_heart_rate_achieved += -6
+R09 | heuristica   | SE age >= 71 ENTAO max_heart_rate_achieved += -10

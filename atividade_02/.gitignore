@@ -1,0 +1,4 @@
+# Modelos serializados são regenerados pelos notebooks 04 e 05
+models/
+# Material da disciplina (PDFs das aulas, enunciado e notebook do professor)
+aulas/

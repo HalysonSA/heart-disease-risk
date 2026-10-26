@@ -1,0 +1,3 @@
+problema,n_sessoes,tempo_total_min,tempo_medio_sessao_min,desvio_padrao_min,n_regras_total,tempo_medio_por_regra_min
+classificacao,3,0.52,0.17333333333333334,0.11015141094572203,14,0.037142857142857144
+regressao,3,0.45,0.15,0.04358898943540674,9,0.05

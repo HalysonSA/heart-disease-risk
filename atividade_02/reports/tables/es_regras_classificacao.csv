@@ -1,0 +1,15 @@
+id,tipo,regra
+R01,relacao,SE exercise_induced_angina == 1 ENTAO score += 0.35
+R02,relacao,SE st_depression >= 1.5 ENTAO score += 0.25
+R03,relacao,SE max_heart_rate_achieved <= 147 ENTAO score += 0.3
+R04,relacao,SE max_heart_rate_achieved >= 184 ENTAO score += -0.3
+R05,relacao,SE age >= 65 ENTAO score += 0.15
+R06,relacao,SE hdl <= 45 ENTAO score += 0.15
+R07,relacao,SE ldl >= 126 ENTAO score += 0.15
+R08,relacao,SE resting_bp_systolic >= 140 ENTAO score += 0.15
+R09,relacao,SE smoker_Current == 1 ENTAO score += 0.15
+R10,heuristica,SE hba1c >= 6.5 OU fasting_blood_sugar >= 140 ENTAO score += 0.1
+R11,heuristica,SE bmi >= 29 ENTAO score += 0.1
+R12,heuristica,SE family_history == 1 ENTAO score += 0.05
+R13,heuristica,SE age <= 43 E hdl >= 58 ENTAO score += -0.15
+R99,heuristica,SE score >= 0.5 ENTAO has_heart_disease = 1
