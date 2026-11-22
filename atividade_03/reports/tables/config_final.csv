@@ -1,0 +1,16 @@
+hiperparâmetro,regressao,classificacao
+neuronios,32,8
+camadas,2,1
+ativacao,Sigmoid,Tanh
+otimizador,AdamW,RMSprop
+lr,0.00016,0.00162
+batch,16,16
+epocas,200,200
+paciencia,20,20
+weight_decay,0.0001,0.0001
+dropout,0.1,0.1
+perda,Huber,MSE
+pos_weight,1.0,1.25
+padronizar,True,True
+semente salva,3,4
+limiar,-,0.5

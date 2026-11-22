@@ -1,0 +1,6 @@
+patient_id,prob_com_doenca,has_heart_disease_previsto,classe
+7798,0.008898914,0,sem_doenca
+10,0.305097,0,sem_doenca
+2820,0.010177509,0,sem_doenca
+8937,0.15369628,0,sem_doenca
+6217,0.43628278,0,sem_doenca

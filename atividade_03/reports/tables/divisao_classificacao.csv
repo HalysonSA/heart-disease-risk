@@ -1,0 +1,4 @@
+conjunto,n,positivos (com doença),% positivos
+treino,5760,1746,30.312499999999996
+validação,1440,436,30.277777777777775
+teste,1800,545,30.277777777777775

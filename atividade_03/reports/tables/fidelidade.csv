@@ -1,0 +1,5 @@
+problema,conjunto,n,allclose (atol=1e-6),idênticas (equal),dif. máx. absoluta,métrica,antes de salvar,modelo carregado
+regressao,val,1440,True,True,0.0,,,
+regressao,teste,1800,True,True,0.0,RMSE,12.164090133883894,12.164090133883894
+classificacao,val,1440,True,True,0.0,,,
+classificacao,teste,1800,True,True,0.0,F1,0.8215613382899628,0.8215613382899628

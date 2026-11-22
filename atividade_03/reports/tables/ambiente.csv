@@ -1,0 +1,12 @@
+,valor
+Sistema operacional,Windows 10 (10.0.19045)
+Processador,AMD Ryzen 5 5600X 6-Core Processor (TDP 65 W)
+Núcleos físicos / lógicos,6 / 12
+Memória RAM (GB),15.9
+GPU,não (PyTorch em CPU; torch.cuda.is_available() = False)
+Python,3.13.3
+PyTorch,2.14.0+cpu
+NumPy,2.5.3
+pandas,2.3.3
+scikit-learn,1.7.2
+Threads do PyTorch nas medições (torch.get_num_threads()),1

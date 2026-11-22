@@ -1,0 +1,3 @@
+problema,modelo,treino,validação
+regressao,Regressão linear (OLS),11.835830912927925,11.610295266436237
+classificacao,Regressão logística,0.8389182833627278,0.8236714975845411

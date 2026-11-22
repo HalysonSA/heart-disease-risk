@@ -12,6 +12,16 @@
 
 ---
 
+## 🗂️ Atividades deste repositório
+
+| Atividade | Pasta | Conteúdo |
+|---|---|---|
+| 1 - EDA e pré-processamento | raiz (`notebooks/`, `src/`) | Análise exploratória, limpeza, codificação e definição dos dois problemas |
+| 2 - Sistema especialista, árvore e ensembles | [`atividade_02/`](atividade_02/) | Comparação de famílias de modelos com as métricas da Aula 08 |
+| 3 - Redes neurais (MLP) com PyTorch | [`atividade_03/`](atividade_03/) | Estudo de hiperparâmetros, persistência em `.pt` e inferência |
+
+---
+
 ## 📋 Descrição do Projeto
 
 Este repositório contém a análise exploratória e o pré-processamento de dados para a atividade prática avaliativa da disciplina **DCT1401 - Inteligência Artificial**, realizada no período 2026.2.
@@ -37,8 +47,8 @@ Todos os resultados devem ser documentados em um relatório técnico que trace o
 ## 📊 Dataset
 
 - **Nome:** Heart Disease Risk 2026
-- **Tamanho:** ~1.100 registros de pacientes
-- **Variáveis:** 27 colunas (26 features + 1 target)
+- **Tamanho:** 9.000 registros de pacientes
+- **Variáveis:** 27 colunas no arquivo original (`patient_id`, 24 variáveis clínicas e de estilo de vida, 2 categóricas que viram one-hot no pré-processamento)
 - **Localização:** `data/raw/dataset.csv`
 - **Tema:** Risco cardiovascular e saúde cardíaca
 

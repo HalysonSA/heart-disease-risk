@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+# Jupyter
+.ipynb_checkpoints/
+# Arquivos temporários das demonstrações do notebook 06
+models/_*.pt
+# Material da disciplina
+aulas/
+# Auxiliares do LaTeX
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
